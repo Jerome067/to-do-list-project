@@ -14,8 +14,8 @@ public class ToDoApp {
         if (tasks.size() == 0) {
             System.out.println("No Tasks yet");
         } else {
-            for (int i = 0; i <= tasks.size(); i++) {
-                System.out.println((i + 1) + ". " + tasks.get(i));
+            for (int i = 0; i < tasks.size(); i++) {
+            System.out.println((i + 1) + ". " + tasks.get(i));
             }
         }
     }
