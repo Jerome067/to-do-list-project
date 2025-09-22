@@ -5,14 +5,14 @@ public class ToDoApp {
 
     static ArrayList tasks = new ArrayList();
 
-    public static void addtask(String t) {
+    public static void addTask(String t) {
         tasks.add(t);
-        System.out.println(" Task is Added!!");
+        System.out.println("Task Added!!");
     }
 
     public static void showTasks() {
         if (tasks.size() == 0) {
-            System.out.println(" No Task/s yet!!");
+            System.out.println("No Tasks yet");
         } else {
             for (int i = 0; i <= tasks.size(); i++) {
                 System.out.println((i + 1) + ". " + tasks.get(i));
@@ -22,7 +22,7 @@ public class ToDoApp {
 
     public static void removeTask(int n) {
         tasks.remove(n);
-        System.out.println(" Task is Remove!!");
+        System.out.println("task removed");
     }
 
     public static void main(String args[]) {
@@ -42,23 +42,23 @@ public class ToDoApp {
             
             if (choice == 1) {
                 System.out.println("=================================");
-                System.out.println("   [1] Add Task");
+                System.out.println("   [1] Add Task           ");
                 System.out.println("=================================");
                 System.out.print(" Enter Task Name: ");
                 String t = s.nextLine();
-                addtask(t);
+                addTask(t);
                 System.out.println("=================================");
                 
             } else if (choice == 2) {
                 System.out.println("=================================");
-                System.out.println("   [2] Show Task");
+                System.out.println("   [2] Show Task          ");
                 System.out.println("=================================");
                 showTasks();
                 System.out.println("=================================");
                 
             } else if (choice == 3) {
                 System.out.println("=================================");
-                System.out.println("   [3] Remove Task");
+                System.out.println("   [3] Remove Task        ");
                 System.out.println("=================================");
                 System.out.print("Enter task no to remove: ");
                 int n = s.nextInt();
@@ -67,7 +67,7 @@ public class ToDoApp {
 
             } else if (choice == 4) {
                 System.out.println("=================================");
-                System.out.println("   [4] Exit");
+                System.out.println("   [4] Exit                  ");
                 System.out.println("=================================\n");
                 System.out.println(" Exiting the program,\n have a nice day!\n");
                 System.out.println("=================================");
