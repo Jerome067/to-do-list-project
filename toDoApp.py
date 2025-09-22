@@ -2,7 +2,7 @@
 
 tasks = []
 
-def addtask(task): # <--- alligned this colon with def
+def add_task(task): # <--- alligned this colon with def
     """Add a task to the tasks list and print confirmation."""
     tasks.append(task)
     print("\nTask added!") 
@@ -16,7 +16,7 @@ def show_tasks():
         for i, task in enumerate(tasks):
             print(i+1, ".", task)
 
-def removetask(tasknumber):
+def remove_task(tasknumber):
     """
     Remove a task from the tasks list by its index (0-based).
 
@@ -31,27 +31,28 @@ def main():
     """
     while True:
         print("\n===========================")
-        print("    TO-DO LIST (PYTHON)")        
+        print("    TO-DO LIST (PYTHON)")
         print("===========================")
 
         print("1. Add Task")
         print("2. Show Tasks")
         print("3. Remove Task")
         print("4. Exit")
-        print("===========================")   
+        print("===========================")
         ch = input("Enter choice: ")
         if ch == "1":
             t = input("Enter task: ")
-            addtask(t)
+            add_task(t)
         elif ch == "2":
             show_tasks()
         elif ch == "3":
             n = int(input("Enter task no to remove: "))
             if 1 <= n <= len(tasks):
-                removetask(n-1)
+                remove_task(n-1)
             else:
                 print("Invalid task number!")
         elif ch == "4":
+            print("Thak you for using the to-do app!")
             break
         else:
             print("\nWrong choice!")
