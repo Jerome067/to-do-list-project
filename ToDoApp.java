@@ -50,6 +50,7 @@ public class ToDoApp {
                 System.out.println("   [1] Add Task           ");
                 System.out.println("=================================");
                 System.out.print(" Enter Task Name: ");
+                s.nextLine();
                 String t = s.nextLine();
                 addTask(t);
                 System.out.println("=================================");
