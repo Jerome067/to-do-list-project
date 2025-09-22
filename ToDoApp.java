@@ -84,6 +84,8 @@ public class ToDoApp {
                 System.out.println("=================================");
             }
         }
+        scanner.close();
     }
 }
+
 
