@@ -7,12 +7,12 @@ public class ToDoApp {
 
     public static void addTask(String t) {
         tasks.add(t);
-        System.out.println("Task Added!!");
+        System.out.println(" Task is Added!!");
     }
 
     public static void showTasks() {
         if (tasks.size() == 0) {
-            System.out.println("No Tasks yet");
+            System.out.println(" No Tasks yet!!");
         } else {
             for (int i = 0; i < tasks.size(); i++) {
             System.out.println((i + 1) + ". " + tasks.get(i));
@@ -21,9 +21,14 @@ public class ToDoApp {
     }
 
     public static void removeTask(int n) {
-        tasks.remove(n);
-        System.out.println("task removed");
+        if (n > 0 && n <= tasks.size()) {
+            tasks.remove(n - 1);
+            System.out.println(" Task is removed!!");
+        } else {
+            System.out.println(" Invalid task number!!");
+        }
     }
+
 
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
@@ -60,7 +65,7 @@ public class ToDoApp {
                 System.out.println("=================================");
                 System.out.println("   [3] Remove Task        ");
                 System.out.println("=================================");
-                System.out.print("Enter task no to remove: ");
+                System.out.print(" Enter task no to remove: ");
                 int n = s.nextInt();
                 removeTask(n);
                 System.out.println("=================================");
