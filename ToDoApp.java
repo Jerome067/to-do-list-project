@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ToDoApp {
 
-    static ArrayList tasks = new ArrayList();
+    static ArrayList<String> tasks = new ArrayList<>();
 
     public static void addTask(String t) {
         tasks.add(t);
