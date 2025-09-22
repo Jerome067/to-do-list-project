@@ -29,11 +29,17 @@ public class ToDoApp {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
         while (true) {
-            System.out.println("1 Add Task"); // <-- inconsistent spacing
-            System.out.println("2.Show Tasks");
-            System.out.println("3.Remove Task");
-            System.out.println("4 Exit");
-            int choice = s.nextInt(); // 
+            System.out.println("=============================");
+            System.out.println("      TO DO LIST (JAVA)");
+            System.out.println("=============================");
+            System.out.println("[1] Add Task");
+            System.out.println("[2] Show Tasks");
+            System.out.println("[3] Remove Task");
+            System.out.println("[4] Exit");
+            System.out.println("=============================");
+            System.out.println("Please enter your choice: ");
+            int choice = s.nextInt();
+            System.out.println("=============================");
             if (choice == 1) {
                 System.out.println("Enter Task: ");
                 String t = s.nextLine();
@@ -52,4 +58,5 @@ public class ToDoApp {
         }
     }
 }
+
 
